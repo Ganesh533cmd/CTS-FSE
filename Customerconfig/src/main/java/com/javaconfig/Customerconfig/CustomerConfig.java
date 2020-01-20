@@ -1,0 +1,9 @@
+package com.javaconfig.Customerconfig;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages = "com.javaconfig.Customerconfig")
+public class CustomerConfig {
+}
