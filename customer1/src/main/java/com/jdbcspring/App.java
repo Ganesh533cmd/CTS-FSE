@@ -22,8 +22,8 @@ static CustomerService service;
     	
     	try {
 			context=new ClassPathXmlApplicationContext();
-			service=context.getBean("service",CustomerService.class);
-			List<Customer1> l=service.getAllCustomers();
+			service=context.getBean("service",imageService.class);
+			List<Customer1> l=((Object) service).getAllimage();
 			l.forEach(c1->{
 				System.out.println(c1);
 			});
