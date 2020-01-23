@@ -20,7 +20,7 @@ public class App
 	
     public static void main( String[] args ) throws Exception {
 		int choice = 0;
-		Album album = null;
+		User user = null;
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
@@ -44,7 +44,7 @@ public class App
 					User tempUser = new User(null, uId, url, false);
 					((Object) a).setUser(tempUser);
 
-					User a1 = dao.createUser(a);
+					UserDAO a1 = dao.createUser(a);
 					System.out.println(a1);
 					System.err.println("User created");
 					break;
