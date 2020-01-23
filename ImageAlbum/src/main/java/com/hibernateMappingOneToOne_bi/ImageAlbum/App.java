@@ -4,11 +4,16 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
 
+import org.h2.engine.User;
+
+import com.hibernateMappinghbm.User.UserDAO;
+import com.hibernateMappinghbm.User.UserDAOImpl;
+
 public class App 
 {
-	private static AlbumImageDAO dao;
+	private static UserDAOImpl dao;
 	static {
-		dao = new AlbumimageDAOImpl();
+		dao = new UserDAOImpl(null);
 	}
 	
     public static void main( String[] args ) throws Exception {
@@ -28,23 +33,18 @@ public class App
 				int uId;
 				switch (choice) {
 				case 1:
-					/*
-					 * System.out.println("enter the no. of customers u want to add: "); int n =
-					 * Integer.parseInt(br.readLine().toString()); for (int i = 0; i < n; i++) {
-					 */
-					System.out.print("Enter album name: ");
+					
+					System.out.print("Enter user name: ");
 					String name = br.readLine().toString();
-					Album a = new Album(name, LocalDate.now());
-					System.out.print("Enter image url: ");
+					User a = new User(null, uId, name, false);
+					System.out.print("Enter user url: ");
 					String url = br.readLine().toString();
-					Image tempImage = new Image(url);
-					a.setImage(tempImage);
+					User tempUser = new User(null, uId, url, false);
+					((Object) a).setUser(tempUser);
 
-					Album a1 = dao.createAlbum(a);
+					UserDAO a1 = dao.createUser(a);
 					System.out.println(a1);
-					System.err.println("Album created");
-
-					// }
+					System.err.println("User created");
 					break;
 				case 2:
 					System.out.print("enter UID: ");
@@ -54,12 +54,12 @@ public class App
 				case 3:
 					System.out.print("enter UID: ");
 					uId = Integer.parseInt(br.readLine());
-					System.out.println(dao.updateAlbum(uId));
+					System.out.println(dao.createUser(uId));
 					break;
 				case 4:
 					System.out.print("enter UID: ");
 					uId = Integer.parseInt(br.readLine());
-					System.out.println(dao.deleteAlbum(uId));
+					System.out.println(dao.deleteUser(uId));
 					break;
 
 				case 0:
