@@ -25,10 +25,10 @@ public class App
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			do {
-				System.out.println("======================\n1. create Album");
-				System.out.println("2. find album by id");
-				System.out.println("3. update album");
-				System.out.println("4. delete album");
+				System.out.println("======================\n1. create User");
+				System.out.println("2.find user by id");
+				System.out.println("3.update user");
+				System.out.println("4.delete user");
 				System.out.println("0. exit");
 				System.out.print("choice: ");
 				choice = Integer.parseInt(br.readLine().toString());
@@ -36,9 +36,9 @@ public class App
 				switch (choice) {
 				case 1:
 					
-					System.out.print("Enter user name: ");
+					System.out.print("Enter username: ");
 					String name = br.readLine().toString();
-					User a = new User(null, uId, name, false);
+					User a = new User(null,uId,name,false);
 					System.out.print("Enter user url: ");
 					String url = br.readLine().toString();
 					User tempUser = new User(null, uId, url, false);
