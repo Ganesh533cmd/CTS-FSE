@@ -1,12 +1,12 @@
 package springMvcDemo;
-
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-@Controller
-public class HomeController {
+import org.springframework.web.bind.annotation.RequestMethod;
 
-	@RequestMapping("/")
-	public String showPage() {
+public class HomeController {
+	@RequestMapping(method = RequestMethod.GET,path = "/")
+	public String home()
+	{
 		return "main-menu";
 	}
+
 }
