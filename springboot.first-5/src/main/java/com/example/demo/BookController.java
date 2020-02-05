@@ -60,7 +60,7 @@ public Optional<Book> getBookById(@PathVariable Integer bookId) throws Exception
 	Optional<Book> book=bookService.getBookById(bookId);
 	if(!book.isPresent())
 	{
-		throw new BookNotFoundException("nv ichina id tho book ledhura saami id: "+bookId);
+		throw new BookNotFoundException("book not found with id: "+bookId);
 	}
 	
 	return book; 
