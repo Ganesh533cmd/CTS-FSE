@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Gift Card 1.0</title>
+<style>
+
+ <link rel="stylesheet" href="css/login.css">
+<
+link rel ="stylesheet " href ="https: //www.w3schools.com /w3css/4/w3.css
+	 ">body {
+	/* background-image: url('img/bkg.jpg'); */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-left: 15px;
+	padding-top: 10px;
+	width: 97%;
+}
+
+table, th, td { /* border: 1px solid black; */
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: absolute;
+	z-index: 1;
+	top: 5;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	padding-right: 15px;
+	margin-left: 15px;
+}
+
+.sidenav
+ 
+a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #818181;
+	display: block;
+}
+
+.sidenav
+ 
+a
+:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 160px; /* Same as the width of the sidenav */
+	font-size: 28px; /* Increased text to enable scrolling */
+	padding: 0px 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+table, th, td {
+	/* border: 1px solid black; */
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+.sidenav {
+	height: 100%;
+	width: 160px;
+	position: absolute;
+	z-index: 1;
+	top: 5;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 10px;
+	padding-bottom: 100px;
+	padding-right: 15px;
+	margin-left: 15px;
+}
+
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #818181;
+	display: block;
+}
+
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 160px; /* Same as the width of the sidenav */
+	font-size: 28px; /* Increased text to enable scrolling */
+	padding: 0px 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav
+ 
+a {
+		font-size: 18px;
+	}
+}
+
+.mySlides {
+	display: none;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<table style="width: 80%">
+		<tr>
+			<th><img src="img/mainLogo.png" oncontextmenu="hi"
+				style="width: 230px; height: 120px"></th>
+			<th colspan="2">
+				<p
+					style="font-family: Brush Script MT; font-size: 180%; color: tomato;">Gift
+					Card Shop</p>
+			</th>
+		</tr>
+	</table>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Chilu's Gift Store</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+
+				<!-- 	<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Page 1-1</a></li>
+						<li><a href="#">Page 1-2</a></li>
+						<li><a href="#">Page 1-3</a></li>
+					</ul></li> -->
+
+				<li><a href="order.html">Place Gift Card Order</a></li>
+				<li><a href="view.html">View Gift Card Orders</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			
+				<li><a href="order.jsp"><span
+						class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				<li><a href="contact.html"><span class="glyphicon glyphicon-phone"></span>
+						Contact Us</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="sidenav">
+		<a href="index.html">Home</a> <a href="order.html">Place Gift Card Order</a> <a
+			href="view.html">View Gift Card Orders</a> <a href="contact.html">Contact</a>
+	</div>
+
+<table class="login">
+	<div class="login-wrap">
+		<div class="login-html">
+			<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label
+				for="tab-1" class="tab">Sign In</label> <input id="tab-2"
+				type="radio" name="tab" class="sign-up"><label for="tab-2"
+				class="tab">Sign Up</label>
+			<div class="login-form">
+				<div class="sign-in-htm">
+					<div class="group">
+						<label for="user" class="label">Username</label> <input id="user"
+							type="text" class="input">
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label> <input id="pass"
+							type="password" class="input" data-type="password">
+					</div>
+					<div class="group">
+						<input id="check" type="checkbox" class="check" checked> <label
+							for="check"><span class="icon"></span> Keep me Signed in</label>
+					</div>
+					<div class="group">
+						<input type="submit" class="button" value="Sign In">
+					</div>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<a href="#forgot">Forgot Password?</a>
+					</div>
+				</div>
+				<div class="sign-up-htm">
+					<div class="group">
+						<label for="user" class="label">Username</label> <input id="user"
+							type="text" class="input">
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Password</label> <input id="pass"
+							type="password" class="input" data-type="password">
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Repeat Password</label> <input
+							id="pass" type="password" class="input" data-type="password">
+					</div>
+					<div class="group">
+						<label for="pass" class="label">Email Address</label> <input
+							id="pass" type="text" class="input">
+					</div>
+					<div class="group">
+						<input type="submit" class="button" value="Sign Up">
+					</div>
+					<div class="hr"></div>
+					<div class="foot-lnk">
+						<label for="tab-1">Already Member?</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</table>
+
+</body>
+</html>
+
+
+
+
+
