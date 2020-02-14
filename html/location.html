@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getlocation()">get location</button>
+    <script>
+        function getlocation(){
+            if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showlocation)
+        }else{
+            alert("not accepted to use this");
+      
+       }
+        }
+        function showlocation(position){
+            var longtitude = position.coords.longtitude;
+            var longtitude = position.coords.latitude;
+            document.write("your location: "+longtitude+" "+latitude)
+        }
+        function errorhandler(error){
+            if(error.code--1){
+                alert("user didnt allow")
+                }else{
+                    alert("position not available")
+                }
+        }
+        
+
+        
+    </script>
+</body>
+</html>

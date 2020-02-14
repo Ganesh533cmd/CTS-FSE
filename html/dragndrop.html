@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<div>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div1{
+        width:300px;
+        height:300px;
+        border:2px dotted green;
+
+    }
+</style>
+<body>
+    <div id="div1" ondrop="onDrop(event)" ondragover="allowDefault(event)"></div>
+
+    <img id="imag1" draggable="true" ondragstart="onDrag(event)"
+    src="automatic9.png" />
+
+    <script>
+        function allowDefault(event){
+            event.preventDefault();
+        }
+        function onDrag(event){
+            event.dataTransfer.setData("data",event.target.id);
+        }
+        function onDrop(event){
+            var data = event.dataTransfer.getData("data");
+            event.target.appendChild(document.getElementById(data))
+        }
+        function onDragover(event){
+            event.preventDefault();
+        }
+    </script>
+</body>
+</html>
