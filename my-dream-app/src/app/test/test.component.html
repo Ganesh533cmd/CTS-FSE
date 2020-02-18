@@ -1,0 +1,27 @@
+<button class="btn btn-primary" (click)="onButtonClicked()" >Refresh Data</button>
+ <div class="container">
+     <h1>Employee List</h1>
+     <table class="table">
+         <thead>
+             <tr>
+                 <th>Code</th>
+                 <th>Name</th>
+                 <th>Age</th>
+                 <th>Action</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr *ngFor="let employee of employees; trackBy:trackByEmpId">
+                 <td>{{ employee.empId }}</td>
+                 <td>{{ employee.empName }}</td>
+                 <td>{{ employee.age }}</td>
+                 <td><button class="btn btn-danger" (click)=onDelete(employee) >Delete</button></td>
+             </tr>
+         </tbody>
+     </table>
+ </div>
+ <h3>test-component</h3>
+ {{parentData|json}}
+ <h3>{{parentData.firstName}}</h3>
+ <h3>{{parentData.lastName}}</h3>
+ <h3>{{parentData.email}}</h3>
