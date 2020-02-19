@@ -1,0 +1,16 @@
+<div class="container">
+    <h3>cart Items</h3>
+    <table class="table">
+        <div>
+            <tbody>
+                <tr *ngFor="let product of cart">
+                 <td><img src="{{_image_url+product.image}}" width=100px height=100px /></td>
+                 <td>{{product.productName}}</td>
+                 <td>{{product.unit}}</td>
+                 <td>product.product*50|currency:INR}}</td>  
+                 <td><i class="fas fa-trach-alt"></i></td>
+                    <th></th>
+                </tr>
+            </tbody>
+        </div>
+    </table>
