@@ -1,0 +1,15 @@
+button{
+	margin-bottom: 3em;
+}
+.btn btn-outline-1{
+	background-color:burlywood;
+}
+.btn btn-outline-2{
+	background-color: gray;
+}
+.tab-content{
+	background-color: darkkhaki;
+}
+ul{
+	align-content: space-around;
+}

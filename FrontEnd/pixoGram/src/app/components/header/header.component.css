@@ -1,0 +1,26 @@
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+    vertical-align: top;
+}
+p::first-letter {
+    font-size: 250%;
+    color: crimson;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  ul{
+    background-color: ivory;
+    margin: 5px;
+    color: darkgray;
+    border-style:groove;
+   
+  }
+  a:link, a:visited {
+    color: (internal value);
+    text-decoration:none ;
+    cursor: auto;
+  }
